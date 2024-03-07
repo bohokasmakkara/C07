@@ -20,3 +20,19 @@ int	ft_ultimate_range(int **range, int min, int max)
 	}
 	return (max - min);
 }
+#include <stdio.h>
+#include <unistd.h>
+int main()
+{
+	int min = 10;
+	int	max =20;
+	int i = 0;
+	int	*pointer;
+	ft_ultimate_range(&pointer, min, max);
+	while (i < max - min)
+	{
+		printf("%i\n", pointer[i]);
+		i++;
+	}
+	return (0);
+}
